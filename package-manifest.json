@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "skill": "workbuddy-ai-connector",
+  "version": "0.2.0",
+  "hashAlgorithm": "sha256",
+  "files": {
+    ".gitattributes": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+    ".gitignore": "4722f251632a979514155f73dfb1e3034a560259a97d30dfcb7f00c6cd68b37f",
+    "agents/openai.yaml": "5bffe33da122c340d428ac4141fcc118addc8433178f6f3fafc34a155fa70e20",
+    "LICENSE": "7500718ce8b22208550dae917e38a8890ed49244c38d4e6f2aca6fd4fd24d08e",
+    "README.md": "f7a325dfe42ebcd0f3d5a905ec133a04d4a0c2b1f46c7adc43ebc46ea2e5e35d",
+    "references/architecture.md": "d1d8d77d161f9fe3b09efdd3b6cfd2399ab88ed76cfb288159c1f214deb76f7d",
+    "references/validation.md": "d36f6dfb33fe467626f364927191474cfa3257a71da8d6fc73dc11e45ecc4bb0",
+    "scripts/check-package.cjs": "e3ffa5b2243fcc61219896b22a5c9cc0ab2e2047b8bc0fa7ad3403fe9fdeedd1",
+    "scripts/manage.cjs": "de6c75da516acf6d29a0eb9ac59b581c86ea4a5705c3a17b1a5d0c5e89f1df00",
+    "scripts/runtime/auth.cjs": "644ad19de9c45e0635b8ea9f3809a7b2e598fa9ae7189117d87f99dd220d34ab",
+    "scripts/runtime/bridge.cjs": "e2ca2604340f304c7eaa49ae674c75d66929c2c401c3b62c107818a7727ce84e",
+    "scripts/runtime/config-files.cjs": "ef2a6bb958e57981265e22b502026dc7136ec2dfa101216cd18e33fdc4060d5f",
+    "scripts/runtime/context-settings.cjs": "54d944e45f864997b4f1e626e57cfa05a9b4e5a934d6e83023d1f87838186b4f",
+    "scripts/runtime/environment.cjs": "f77bad5d3c481e464373bafd456dff20a9ee134113ac7df45ca0d7c23d89579c",
+    "scripts/runtime/free-priority.cjs": "d29928f3484fd49266e54b5f77ee0c4e7831b5c58c2a54a6fec2f297dd87afd7",
+    "scripts/runtime/mcp-launcher.cjs": "96cab085c47c6a0624e448828c217b883fc498e6a701d73ab7094639228fc84c",
+    "scripts/runtime/model-display.cjs": "af11efc66eef42261616d1d3a01d7c942f49a4eb0dbcb01d44f598c2c467123b",
+    "scripts/runtime/probe.cjs": "9044d1c1e7a0246d8f518750c06567533e7bd31f09db8b064620a83aff87a250",
+    "scripts/runtime/registration.cjs": "70727f95df102f44394d4c202b48349db828ebd3843fa66904093f143188bb47",
+    "scripts/setup.ps1": "bab1a8690dd9c5facd0b598bfef49ba840660028e5fdd24137828f063a49792c",
+    "SKILL.md": "7af9dff1e66101d3f079ce6202759ac3fb534666924bca4280f1057aa8f5fbaf",
+    "tests/registration.test.cjs": "34c61d59efd8a5927f73a8957eb476ca67addeab31e6f4319c1ef2fd38afc6b8"
+  }
+}

@@ -1,0 +1,17 @@
+.env
+.env.*
+*.log
+*.jsonl
+*.info
+*.exe
+*.dll
+*.node
+*.tmp
+*.zip
+node_modules/
+evidence/
+backups/
+runtime/
+!scripts/runtime/
+__pycache__/
+.playwright-cli/

@@ -1,0 +1,4 @@
+interface:
+  display_name: "WorkBuddy AI 模型接入"
+  short_description: "在国内版 WorkBuddy 使用已登录国际账号的对话模型与上下文选项"
+  default_prompt: "使用 $workbuddy-ai-connector 检查本机两个 WorkBuddy 版本，并将国际账号的对话模型接入国内版。"
