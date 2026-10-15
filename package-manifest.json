@@ -8,7 +8,7 @@
     ".gitignore": "4722f251632a979514155f73dfb1e3034a560259a97d30dfcb7f00c6cd68b37f",
     "agents/openai.yaml": "5bffe33da122c340d428ac4141fcc118addc8433178f6f3fafc34a155fa70e20",
     "LICENSE": "7500718ce8b22208550dae917e38a8890ed49244c38d4e6f2aca6fd4fd24d08e",
-    "README.md": "f7a325dfe42ebcd0f3d5a905ec133a04d4a0c2b1f46c7adc43ebc46ea2e5e35d",
+    "README.md": "025300a29a2460bcd65d89c6ddb2c47cbbc8b4443927877821016906bc8346b1",
     "references/architecture.md": "d1d8d77d161f9fe3b09efdd3b6cfd2399ab88ed76cfb288159c1f214deb76f7d",
     "references/validation.md": "d36f6dfb33fe467626f364927191474cfa3257a71da8d6fc73dc11e45ecc4bb0",
     "scripts/check-package.cjs": "e3ffa5b2243fcc61219896b22a5c9cc0ab2e2047b8bc0fa7ad3403fe9fdeedd1",

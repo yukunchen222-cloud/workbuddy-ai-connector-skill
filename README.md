@@ -4,6 +4,40 @@
 
 本项目是非官方 Windows 本机适配。需要本机已有两个客户端和有效的国际版登录，不需要再部署 AI 服务，也不需要下载模型权重。代码只使用 Node.js 内置模块及本机已安装客户端的能力，不分发任何客户端二进制。
 
+## 直接复制给 WorkBuddy
+
+打开**国内版 WorkBuddy**，新建一个任务，完整复制下面这段话发送。它包含仓库、固定版本和部署要求，不需要自己填写安装路径或编写命令。
+
+```text
+请帮我安装并部署这个 Skill，让我直接在国内版 WorkBuddy 中使用我已登录的 WorkBuddy AI 国际账号对话模型。
+
+仓库：https://github.com/yukunchen222-cloud/workbuddy-ai-connector-skill
+版本：v0.2.0
+固定源码提交：bced96e403ec636995eaedb1e5715343f1938d04
+安装包：https://github.com/yukunchen222-cloud/workbuddy-ai-connector-skill/releases/download/v0.2.0/workbuddy-ai-connector.zip
+安装包 SHA-256：e1152142513a41090b725a3af4834cb8bb6ce2b1ce83c3b330e22a557935f175
+
+请先阅读 README.md 和 SKILL.md，按当前环境的来源审查规则检查脚本，下载并校验这个固定版本，再通过当前 WorkBuddy 支持的方式安装 Skill。审查不通过就说明原因，不绕过安全规则。
+
+自动查找并核对本机国内版 WorkBuddy.exe、国际版 WorkBuddyAI.exe 的真实位置与版本。确实找不到客户端或需要登录时，再告诉我具体要完成哪一步，不要让我填写示例路径。
+
+按照 Skill 执行 setup.ps1 的 check；成功后继续 install。保留其他模型和 MCP 配置，使用本机已有的国际版运行时，不另外部署 AI。若已安装这个连接组件，先检查现状，需要时再更新，避免重复配置。
+
+模型名称使用“原模型名 · WorkBuddy AI”，自定义组内免费优先；支持 1M 的模型默认 1M，其他模型保留真实上限。
+
+最后检查连接状态，并用一个当前可用的模型完成真实短回复测试，报告模型数量、默认 1M 数量和测试结果。不能只凭脚本成功就说已经可用。
+
+检查通过后直接继续必要的安装步骤，不必每步向我确认。需要我登录、确认原生 MCP 信任或处理系统审批时，再明确告诉我在哪里操作；如需重开客户端，先让我保存当前任务。无法自动操作的界面步骤请具体交接。
+```
+
+首次使用可能需要你**登录国际版、确认原生 MCP 信任**，按实际提示完成即可。如果当前 WorkBuddy 版本不能自动导入 Skill，让它交付已校验的 ZIP 和具体操作位置，再按下方“手动导入 Skill”操作。是否部署成功，以连接检查和真实测试回复为准；不同版本对上述自然语言安装流程的自动化程度尚未逐一验收。
+
+已经导入 Skill 时，可用更短的提示词：
+
+```text
+使用 workbuddy-ai-connector，检查本机现有连接；尚未配置时按 Skill 完成部署，已经配置时不要重复安装。请检查模型目录和上下文设置，并用可用模型完成一次真实短回复验证。支持 1M 的模型默认设为 1M，最后报告检查结果。
+```
+
 ## 已完成与实际验证
 
 截至 **2026-10-15**，在国内版 **5.6.2**、国际版 **5.7.6** 上验证：
@@ -24,9 +58,9 @@
 
 模型数、免费活动与账号权限会变化。免费优先是目录排序，不会改变计费或绕过配额。细节见 [验证记录](references/validation.md)。
 
-## 在 WorkBuddy 中使用 Skill
+## 手动导入 Skill
 
-1. 从本仓库 Releases 下载 `workbuddy-ai-connector.zip`，先审阅来源、脚本和权限。
+1. [下载 v0.2.0 Skill 安装包](https://github.com/yukunchen222-cloud/workbuddy-ai-connector-skill/releases/download/v0.2.0/workbuddy-ai-connector.zip)，先审阅来源、脚本和权限，并核对[版本说明与校验值](https://github.com/yukunchen222-cloud/workbuddy-ai-connector-skill/releases/tag/v0.2.0)。
 2. 在国内版“专家·技能·连接器 → 技能 → 添加技能 → 上传技能”导入 ZIP。
 3. 输入：**“使用 workbuddy-ai-connector，检查我的两个 WorkBuddy 安装位置，把国际账号的对话模型接入国内版。”**
 4. 根据原生提示信任 MCP `workbuddy-ai-connector`，新建任务，在模型菜单选择带 `· WorkBuddy AI` 的模型。
